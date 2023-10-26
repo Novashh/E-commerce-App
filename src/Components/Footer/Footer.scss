@@ -1,0 +1,208 @@
+.footer{
+    height: fit-content;
+    background-color: #3d3d3d;
+    color: #fff;
+   
+    .container{
+        padding: 10px 10px ;
+        max-width: 100%;
+        height: fit-content;
+        .box{
+            margin-top: 20px;
+            padding: 10px 10px;
+
+            .content_box{
+                max-width: 90%;
+                margin: 20px auto;
+               display: grid;
+               gap: 2rem;
+               grid-template-columns: 1fr 1fr 1fr 1fr;
+              
+
+               .content{
+                padding: 10px 10px;  
+                
+
+                h4{
+                    margin-bottom: 10px;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    font-size: 15px;
+                }
+
+                ul{
+                    li{
+                        list-style: none;
+                        padding: 8px 8px;
+
+                        .link{
+                            text-decoration: none;
+                            color: #888888;
+                            font-size: 14px;
+                            font-weight: 300;
+                            transition: 0.5s ease-in;
+                            
+                        }
+
+                        .link:hover{
+                            color: #52a0f9;
+                        }
+                    }
+                }
+
+                .social_link{
+                    max-width: 100%;
+                  max-height: 100%;
+                     
+                     display: flex;
+                     gap: 0.8rem;
+
+                   
+                   
+                    .link{
+                        margin-right: 8px;    
+                        padding: 6px 9px;
+                        background-color: #fff;
+                        box-shadow: 0 0 1px 1px rgb(60, 135, 255);
+                        border-radius: 50%;
+                        transition: 0.5s ease-in-out;
+                       
+
+                        .face{
+                            color: #0703fa;
+                        }
+                        .twitt{
+                            color: #03c4fa;
+                        }
+                        .yt{
+                            color: #fa0303;
+                        }
+                        .insta{
+                            color: #fa0362;
+                        }
+                        .in{
+                            color: #0703fa;
+                        }
+
+                    }
+
+                    .facebook:hover{
+                        background-color: #0703fa;
+                        .face{
+                           color: #fff;
+                        }
+                    }
+
+                    .twitter:hover{
+                        background-color: #03c4fa;
+                        .twitt{
+                           color: #fff;
+                        }
+                    }
+
+                    .youtube:hover{
+                        background-color: #fa0303;
+                        .yt{
+                           color: #fff;
+                        }
+                    }
+
+                    .instagram:hover{
+                        background-color: #fa0362;
+                        .insta{
+                           color: #fff;
+                        }
+                    }
+
+                    .linkedin:hover{
+                        background-color: #0703fa;
+                        .in{
+                           color: #fff;
+                        }
+                    }
+
+                }
+
+               }
+            }
+        }
+       
+    }
+
+    .foot_box{
+        text-align: center;
+        background-color: #232323;
+        height: 10vh;
+
+        .foot_content{
+            padding-top:10px ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h2{
+                margin-right:20px ;
+                font-size: 1.5rem;
+                color: #888888;
+            }
+            p{
+                font-size: 14px;
+                color: #747474;
+            }
+        }
+    }
+
+}
+
+
+//  responsive media queries
+
+@media (min-width:500px) and (max-width:850px) {
+  
+    // For Footer
+    .footer{
+        .container{
+            .box{
+             
+                .content_box{
+                    gap: 1rem;
+                    grid-template-columns: 1fr 1fr ;
+                }
+            }
+        }
+       
+    }
+
+}
+
+@media (min-width:300px) and (max-width:500px) {
+    .footer{
+
+        .container{
+            .box{
+             
+             text-align: center;
+                .content_box{
+               
+                    gap: 1rem;
+                    grid-template-columns: 1fr ;
+                    
+                    .content{
+                        
+                        .social_link{
+                   
+                            width: 100%;
+                           
+                            .link{
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+       
+    }
+
+
+}
